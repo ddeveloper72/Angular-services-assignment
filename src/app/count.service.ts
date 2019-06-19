@@ -4,12 +4,12 @@ export class CountService {
 
   addActiveToInactiveCounter() {
     this.activeToInactiveCounter++;
-    console.log(this.activeToInactiveCounter);
+    console.log('Changed to inactive: ' + this.activeToInactiveCounter);
   }
 
-  subtractInactiveToActiveCounter() {
+  addInactiveToActiveCounter() {
     this.inactiveToActiveCounter++;
-    console.log(this.inactiveToActiveCounter);
+    console.log('Changed to active: ' + this.inactiveToActiveCounter);
   }
 
   constructor() { }
